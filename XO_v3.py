@@ -45,6 +45,8 @@ def check_win(map, N):  # Проверка выигрыша по элемент�
         return True
     elif map[0][0] == N and map[1][1] == N and map[2][2] == N:  # Проверка по диагонали
         return True
+    elif map[2][0] == N and map[1][1] == N and map[0][2] == N:  # Проверка по диагонали
+        return True
     else:
         return False
 
